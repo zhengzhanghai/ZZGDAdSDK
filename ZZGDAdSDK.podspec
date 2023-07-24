@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "ZZGDAdSDK"
-  spec.version      = "0.5"
+  spec.version      = "0.6"
   spec.summary      = "iOS 国内变现SDK"
 
   spec.description  = <<-DESC
@@ -44,7 +44,7 @@ SOFTWARE.
   spec.static_framework = true
   
   spec.ios.dependency 'Ads-Fusion-CN-Beta/CSJMediation', '5.3.5.1'
-    
+  spec.ios.dependency 'Ads-Fusion-CN-Beta/CSJMDebugTools', '5.3.5.1'
   spec.ios.dependency 'GDTMobSDK', '4.14.30'
 
   
