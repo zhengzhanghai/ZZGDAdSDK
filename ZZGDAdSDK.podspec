@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "ZZGDAdSDK"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "iOS 国内变现SDK"
 
   spec.description  = <<-DESC
@@ -44,6 +44,7 @@ SOFTWARE.
   spec.static_framework = true
   
   spec.ios.dependency 'Ads-Fusion-CN-Beta/CSJMediation', '5.3.5.1'
+  spec.ios.dependency 'GDTMobSDK', '4.14.30'
 
   
   spec.homepage     = "https://github.com/zhengzhanghai/ZZGDAdSDK"
@@ -54,9 +55,10 @@ SOFTWARE.
   
   spec.pod_target_xcconfig = {
     'VALID_ARCHS[sdk=iphoneos*]' => 'arm64',
-    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64,arm64'
+    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
   }
   
   spec.xcconfig = { "OTHER_LDFLAGS" => "-ObjC"}
+  spec.pod_target_xcconfig = { "DEFINES_MODULE" => "YES" }
   
 end

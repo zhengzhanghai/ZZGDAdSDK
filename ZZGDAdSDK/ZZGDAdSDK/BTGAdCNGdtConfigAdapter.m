@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <GDTMobSDK/GDTSDKConfig.h>
 #import <BUAdSDK/BUAdSDK.h>
-#import <ZZGDAdSDK/ZZGDAdSDK-Swift.h>
 
 @interface BTGAdCNGdtConfigAdapter()<BUMCustomConfigAdapter>
 
@@ -26,9 +25,7 @@
 
 - (void)initializeAdapterWithConfiguration:(BUMSdkInitConfig * _Nullable)initConfig {
     [BUAdSDKManager setAppID:initConfig.appID];
-    
-    NSString *sdkVersion =  [[ZZADManager shared] sdkVersion];
-    
+        
     NSLog(@"====== initializeAdapterWithConfiguration  %@", sdkVersion);
     
 }
