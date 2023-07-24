@@ -26,7 +26,7 @@
 - (void)initializeAdapterWithConfiguration:(BUMSdkInitConfig * _Nullable)initConfig {
     [BUAdSDKManager setAppID:initConfig.appID];
         
-    NSLog(@"====== initializeAdapterWithConfiguration  %@", sdkVersion);
+    NSLog(@"====== initializeAdapterWithConfiguration ");
     
 }
 

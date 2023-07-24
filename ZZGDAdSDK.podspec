@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "ZZGDAdSDK"
-  spec.version      = "0.0.2"
+  spec.version      = "0.1"
   spec.summary      = "iOS 国内变现SDK"
 
   spec.description  = <<-DESC
