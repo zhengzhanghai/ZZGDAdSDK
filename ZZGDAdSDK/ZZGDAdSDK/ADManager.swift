@@ -7,6 +7,7 @@
 
 import Foundation
 import BUAdSDK
+import CSJMDebugTools
 
 @objcMembers
 @objc(ZZADManager)
@@ -29,5 +30,9 @@ public class ADManager: NSObject {
     
     public func sdkVersion() -> String {
         return "9.9.9"
+    }
+    
+    public func showDebugView() {
+        CSJMDebugTools.startVisualDebug()
     }
 }
