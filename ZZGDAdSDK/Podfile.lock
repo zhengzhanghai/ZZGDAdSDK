@@ -1,0 +1,79 @@
+PODS:
+  - Ads-Fusion-CN-Beta/BUAdSDK (5.3.5.1):
+    - BURelyFoundation/CSJ (= 0.3.0.3)
+  - Ads-Fusion-CN-Beta/CSJMDebugTools (5.3.5.1):
+    - Ads-Fusion-CN-Beta/BUAdSDK
+  - Ads-Fusion-CN-Beta/CSJMediation (5.3.5.1):
+    - Ads-Fusion-CN-Beta/BUAdSDK
+  - BURelyFoundation/AFNetworking (0.3.0.3)
+  - BURelyFoundation/BURelyFoundation (0.3.0.3)
+  - BURelyFoundation/CSJ (0.3.0.3):
+    - BURelyFoundation/BURelyFoundation
+    - BURelyFoundation/HM
+    - BURelyFoundation/NETWork
+  - BURelyFoundation/HM (0.3.0.3)
+  - BURelyFoundation/NETWork (0.3.0.3):
+    - BURelyFoundation/AFNetworking
+  - CSJMAdmobAdapter (10.0.0.0):
+    - Ads-Fusion-CN-Beta/CSJMediation (>= 5.1.6.0)
+  - CSJMBaiduAdapter (5.14.0):
+    - Ads-Fusion-CN-Beta/CSJMediation (>= 5.1.7.4)
+  - CSJMGdtAdapter (4.14.30.0):
+    - Ads-Fusion-CN-Beta/CSJMediation (>= 5.1.7.4)
+  - CSJMKlevinAdapter (2.11.0.211.1):
+    - Ads-Fusion-CN-Beta/CSJMediation (>= 5.1.6.0)
+  - CSJMKsAdapter (3.3.42.0):
+    - Ads-Fusion-CN-Beta/CSJMediation (>= 5.1.7.0)
+  - CSJMMintegralAdapter (7.3.4.0.1):
+    - Ads-Fusion-CN-Beta/CSJMediation (>= 5.1.7.4)
+  - CSJMSigmobAdapter (4.8.0.0):
+    - Ads-Fusion-CN-Beta/CSJMediation (>= 5.1.7.4)
+  - CSJMUnityAdapter (4.3.0.0):
+    - Ads-Fusion-CN-Beta/CSJMediation (>= 5.1.6.0)
+  - GDTMobSDK (4.14.30):
+    - GDTMobSDK/GDTMobSDK (= 4.14.30)
+  - GDTMobSDK/GDTMobSDK (4.14.30)
+
+DEPENDENCIES:
+  - Ads-Fusion-CN-Beta/CSJMDebugTools (= 5.3.5.1)
+  - Ads-Fusion-CN-Beta/CSJMediation (= 5.3.5.1)
+  - CSJMAdmobAdapter (= 10.0.0.0)
+  - CSJMBaiduAdapter (= 5.14.0)
+  - CSJMGdtAdapter (= 4.14.30.0)
+  - CSJMKlevinAdapter (= 2.11.0.211.1)
+  - CSJMKsAdapter (= 3.3.42.0)
+  - CSJMMintegralAdapter (= 7.3.4.0.1)
+  - CSJMSigmobAdapter (= 4.8.0.0)
+  - CSJMUnityAdapter (= 4.3.0.0)
+  - GDTMobSDK (= 4.14.30)
+
+SPEC REPOS:
+  trunk:
+    - Ads-Fusion-CN-Beta
+    - BURelyFoundation
+    - CSJMAdmobAdapter
+    - CSJMBaiduAdapter
+    - CSJMGdtAdapter
+    - CSJMKlevinAdapter
+    - CSJMKsAdapter
+    - CSJMMintegralAdapter
+    - CSJMSigmobAdapter
+    - CSJMUnityAdapter
+    - GDTMobSDK
+
+SPEC CHECKSUMS:
+  Ads-Fusion-CN-Beta: 0e9d8ec6363c718cacfcf78dbc996c35935e7712
+  BURelyFoundation: 7de2625b5c23a689b82ce9820f9231dcd1f8f739
+  CSJMAdmobAdapter: 5b28964907a769609bf43fd70517b778dc729394
+  CSJMBaiduAdapter: 212024ec81587b00555d40c8002cfcd23a26897a
+  CSJMGdtAdapter: 8aeda013ee68ef2f64b61a8da24e06f212853690
+  CSJMKlevinAdapter: 62fa8a42b313e5c96cf709df6bdbaf7618ba25b4
+  CSJMKsAdapter: 9435e303f60007630e109f07de2137b834c9064b
+  CSJMMintegralAdapter: 07fbcc123c9e1f386d9c09f601cad3851060014f
+  CSJMSigmobAdapter: a2050a9dd8c9221622d580e82d1735956df6110b
+  CSJMUnityAdapter: 815716bf55165ddcd50104be2129966ae8773085
+  GDTMobSDK: 4cae52817d881c26f7a656fba439a0792d695933
+
+PODFILE CHECKSUM: 6353e741ac59c29d23f6144ba57febeea27d6777
+
+COCOAPODS: 1.11.3
