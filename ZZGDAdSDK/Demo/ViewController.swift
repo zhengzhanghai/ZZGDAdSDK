@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import ZZGDAdSDK
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        ADManager.shared.start("5407783")
     }
 
 
