@@ -7,7 +7,6 @@
 
 import Foundation
 import BUAdSDK
-import CSJMDebugTools
 import ObjectiveC
 
 @objcMembers
