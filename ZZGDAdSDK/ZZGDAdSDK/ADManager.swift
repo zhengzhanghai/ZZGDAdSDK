@@ -8,6 +8,7 @@
 import Foundation
 import BUAdSDK
 import CSJMDebugTools
+import ObjectiveC
 
 @objcMembers
 @objc(ZZADManager)
@@ -33,6 +34,8 @@ public class ADManager: NSObject {
     }
     
     public func showDebugView() {
-        CSJMDebugTools.startVisualDebug()
+
+        ZZTest.showCSJDebugView()
+        
     }
 }

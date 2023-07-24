@@ -20,6 +20,8 @@
 		ADCFCA1E2A6E1E0800BB4418 /* BTGAdCNGdtConfigAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCFCA1C2A6E1E0800BB4418 /* BTGAdCNGdtConfigAdapter.m */; };
 		ADCFCA212A6E260800BB4418 /* ZZGDAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDA67592A6E1BD2005EED5A /* ZZGDAdSDK.framework */; };
 		ADCFCA222A6E260800BB4418 /* ZZGDAdSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ADDA67592A6E1BD2005EED5A /* ZZGDAdSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ADCFCA282A6E525600BB4418 /* ZZTest.h in Headers */ = {isa = PBXBuildFile; fileRef = ADCFCA262A6E525600BB4418 /* ZZTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADCFCA292A6E525600BB4418 /* ZZTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCFCA272A6E525600BB4418 /* ZZTest.m */; };
 		ADDA675D2A6E1BD2005EED5A /* ZZGDAdSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = ADDA675C2A6E1BD2005EED5A /* ZZGDAdSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		ADCFCA1C2A6E1E0800BB4418 /* BTGAdCNGdtConfigAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTGAdCNGdtConfigAdapter.m; sourceTree = "<group>"; };
 		ADCFCA1F2A6E257900BB4418 /* ZZGDAdSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = ZZGDAdSDK.podspec; path = ../ZZGDAdSDK.podspec; sourceTree = "<group>"; };
 		ADCFCA202A6E257900BB4418 /* pod_lint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = pod_lint.sh; path = ../pod_lint.sh; sourceTree = "<group>"; };
+		ADCFCA262A6E525600BB4418 /* ZZTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZTest.h; sourceTree = "<group>"; };
+		ADCFCA272A6E525600BB4418 /* ZZTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZTest.m; sourceTree = "<group>"; };
 		ADDA67592A6E1BD2005EED5A /* ZZGDAdSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZZGDAdSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDA675C2A6E1BD2005EED5A /* ZZGDAdSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZGDAdSDK.h; sourceTree = "<group>"; };
 		DA173B1DFC628E53D4D8B558 /* Pods_ZZGDAdSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZGDAdSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +148,8 @@
 			children = (
 				ADDA675C2A6E1BD2005EED5A /* ZZGDAdSDK.h */,
 				ADCFCA192A6E1CF500BB4418 /* ADManager.swift */,
+				ADCFCA262A6E525600BB4418 /* ZZTest.h */,
+				ADCFCA272A6E525600BB4418 /* ZZTest.m */,
 				ADCFCA1B2A6E1E0800BB4418 /* BTGAdCNGdtConfigAdapter.h */,
 				ADCFCA1C2A6E1E0800BB4418 /* BTGAdCNGdtConfigAdapter.m */,
 			);
@@ -166,6 +172,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCFCA282A6E525600BB4418 /* ZZTest.h in Headers */,
 				ADCFCA1D2A6E1E0800BB4418 /* BTGAdCNGdtConfigAdapter.h in Headers */,
 				ADDA675D2A6E1BD2005EED5A /* ZZGDAdSDK.h in Headers */,
 			);
@@ -370,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADCFCA1A2A6E1CF500BB4418 /* ADManager.swift in Sources */,
+				ADCFCA292A6E525600BB4418 /* ZZTest.m in Sources */,
 				ADCFCA1E2A6E1E0800BB4418 /* BTGAdCNGdtConfigAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
