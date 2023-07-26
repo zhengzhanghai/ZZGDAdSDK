@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "ZZGDAdSDK"
-  spec.version      = "0.9"
+  spec.version      = "0.8"
   spec.summary      = "iOS 国内变现SDK"
 
   spec.description  = <<-DESC
@@ -39,7 +39,6 @@ SOFTWARE.
   spec.author       = { "zhengzhanghai" => "zzh_xiaohai@163.com" }
   spec.platform     = :ios, "11.0"
   spec.ios.deployment_target = "11.0"
-  spec.swift_versions = "5.0"
   
   spec.requires_arc = true
   spec.static_framework = true
@@ -53,7 +52,7 @@ SOFTWARE.
   spec.source       = { :git => "git@github.com:zhengzhanghai/ZZGDAdSDK.git", :tag => "#{spec.version}" }
 
   #路径是相对git仓库的
- spec.vendored_frameworks  = "ZZGDAdSDK/Products/ZZGDAdSDK.xcframework"
+  spec.source_files  = "ZZGDAdSDK/ZZGDAdSDK/**/*.{h,m,swift}"
   
   spec.pod_target_xcconfig = {
     'VALID_ARCHS[sdk=iphoneos*]' => 'arm64',
@@ -64,5 +63,3 @@ SOFTWARE.
   spec.pod_target_xcconfig = { "DEFINES_MODULE" => "YES" }
   
 end
-
-

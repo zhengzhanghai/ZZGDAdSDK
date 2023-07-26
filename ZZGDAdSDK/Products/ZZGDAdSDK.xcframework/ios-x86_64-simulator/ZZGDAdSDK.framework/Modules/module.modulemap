@@ -1,0 +1,11 @@
+framework module ZZGDAdSDK {
+  umbrella header "ZZGDAdSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module ZZGDAdSDK.Swift {
+  header "ZZGDAdSDK-Swift.h"
+  requires objc
+}

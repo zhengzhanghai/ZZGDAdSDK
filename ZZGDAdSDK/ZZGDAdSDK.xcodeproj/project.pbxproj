@@ -6,6 +6,20 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		ADCFCA6F2A7117D300BB4418 /* MergeFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = ADCFCA722A7117D400BB4418 /* Build configuration list for PBXAggregateTarget "MergeFramework" */;
+			buildPhases = (
+				ADCFCA732A7117D800BB4418 /* Run Script */,
+			);
+			dependencies = (
+			);
+			name = MergeFramework;
+			productName = MergeFramework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		00B62CEA3E7119B428479B01 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559C04205F17CE202ADA1D41 /* Pods_Demo.framework */; };
 		18E6B215297CF7FEDD7E8CDB /* Pods_ZZGDAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA173B1DFC628E53D4D8B558 /* Pods_ZZGDAdSDK.framework */; };
@@ -65,10 +79,10 @@
 		ADCFCA192A6E1CF500BB4418 /* ADManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADManager.swift; sourceTree = "<group>"; };
 		ADCFCA1B2A6E1E0800BB4418 /* BTGAdCNGdtConfigAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTGAdCNGdtConfigAdapter.h; sourceTree = "<group>"; };
 		ADCFCA1C2A6E1E0800BB4418 /* BTGAdCNGdtConfigAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTGAdCNGdtConfigAdapter.m; sourceTree = "<group>"; };
-		ADCFCA1F2A6E257900BB4418 /* ZZGDAdSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = ZZGDAdSDK.podspec; path = ../ZZGDAdSDK.podspec; sourceTree = "<group>"; };
-		ADCFCA202A6E257900BB4418 /* pod_lint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = pod_lint.sh; path = ../pod_lint.sh; sourceTree = "<group>"; };
 		ADCFCA262A6E525600BB4418 /* ZZTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZTest.h; sourceTree = "<group>"; };
 		ADCFCA272A6E525600BB4418 /* ZZTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZTest.m; sourceTree = "<group>"; };
+		ADCFCA6D2A71145200BB4418 /* pod_lint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = pod_lint.sh; path = ../pod_lint.sh; sourceTree = "<group>"; };
+		ADCFCA6E2A71145200BB4418 /* ZZGDAdSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = ZZGDAdSDK.podspec; path = ../ZZGDAdSDK.podspec; sourceTree = "<group>"; };
 		ADDA67592A6E1BD2005EED5A /* ZZGDAdSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZZGDAdSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDA675C2A6E1BD2005EED5A /* ZZGDAdSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZGDAdSDK.h; sourceTree = "<group>"; };
 		DA173B1DFC628E53D4D8B558 /* Pods_ZZGDAdSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZGDAdSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,8 +138,8 @@
 		ADDA674F2A6E1BD2005EED5A = {
 			isa = PBXGroup;
 			children = (
-				ADCFCA202A6E257900BB4418 /* pod_lint.sh */,
-				ADCFCA1F2A6E257900BB4418 /* ZZGDAdSDK.podspec */,
+				ADCFCA6D2A71145200BB4418 /* pod_lint.sh */,
+				ADCFCA6E2A71145200BB4418 /* ZZGDAdSDK.podspec */,
 				ADDA675B2A6E1BD2005EED5A /* ZZGDAdSDK */,
 				ADCFCA062A6E1CA400BB4418 /* Demo */,
 				ADDA675A2A6E1BD2005EED5A /* Products */,
@@ -235,6 +249,9 @@
 					ADCFCA042A6E1CA400BB4418 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					ADCFCA6F2A7117D300BB4418 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					ADDA67582A6E1BD2005EED5A = {
 						CreatedOnToolsVersion = 14.2;
 						LastSwiftMigration = 1420;
@@ -256,6 +273,7 @@
 			targets = (
 				ADDA67582A6E1BD2005EED5A /* ZZGDAdSDK */,
 				ADCFCA042A6E1CA400BB4418 /* Demo */,
+				ADCFCA6F2A7117D300BB4418 /* MergeFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -341,6 +359,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		ADCFCA732A7117D800BB4418 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nINSTALL_DIR=${SRCROOT}/Products/${PROJECT_NAME}.xcframework\n\nDEVICE_DIR=${BUILD_ROOT}/release-iphoneos/${PROJECT_NAME}.framework\n\nSIMULATOR_DIR=${BUILD_ROOT}/release-iphonesimulator/${PROJECT_NAME}.framework\n\n# 如果真机包或模拟包不存在，则退出合并\nif [ ! -d \"${DEVICE_DIR}\" ] || [ ! -d \"${SIMULATOR_DIR}\" ]\nthen\nexit 0\nfi\n\n# 如果合并包已经存在，则替换\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTAgLL_DIR}\"\nfi\n\necho \"开始合并\"\n\nxcodebuild -create-xcframework \\\n-framework \"${DEVICE_DIR}\" \\\n-framework \"${SIMULATOR_DIR}\" \\\n-output \"${INSTALL_DIR}\"\n";
 		};
 		CC31FEFBB0A3FF94CBC8E7A9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -472,6 +508,22 @@
 			};
 			name = Release;
 		};
+		ADCFCA702A7117D400BB4418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADCFCA712A7117D400BB4418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		ADDA675E2A6E1BD2005EED5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -596,6 +648,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31DCB227ED097F13A2B5539B /* Pods-ZZGDAdSDK.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -615,6 +668,7 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fotoable.mergetown.cn.apple.ZZGDAdSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -629,6 +683,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 153E3D146F6116A6C7E36A62 /* Pods-ZZGDAdSDK.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -648,6 +703,7 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fotoable.mergetown.cn.apple.ZZGDAdSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -665,6 +721,15 @@
 			buildConfigurations = (
 				ADCFCA162A6E1CA500BB4418 /* Debug */,
 				ADCFCA172A6E1CA500BB4418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADCFCA722A7117D400BB4418 /* Build configuration list for PBXAggregateTarget "MergeFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCFCA702A7117D400BB4418 /* Debug */,
+				ADCFCA712A7117D400BB4418 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

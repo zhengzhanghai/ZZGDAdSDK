@@ -7,12 +7,25 @@
 		<key>Demo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>MergeFramework.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
 		<key>ZZGDAdSDK.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>ADDA67582A6E1BD2005EED5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
